@@ -35,5 +35,5 @@ jobs:
         ECR_REPOSITORY: my-first-ecr-repo
         IMAGE_TAG: nodejs_demo_image
       run: |
-        docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:node .
-        docker push $ECR_REGISTRY/$ECR_REPOSITORY:node
+        docker build -t $ECR_REGISTRY/my-first-ecr-repo:node .
+        docker push $ECR_REGISTRY/my-first-ecr-repo:node
